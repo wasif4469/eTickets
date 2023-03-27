@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Cenima>
+
+@{
+    ViewData["Title"] = "List Of Cenimas";
+}
+
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <table class="table">
+            <thead>
+                <tr align="justify">
+                    <th>@Html.DisplayNameFor(model => model.CenimaLogo)</th>
+                    <th>@Html.DisplayNameFor(model => model.CenimaName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            <img class="rounded-top bg-transparent" src="@item.CenimaLogo" alt="@item.CenimaName" style="max-width: 150px">
+                        </td>
+                        <td class="col-md-2 align-middle">
+                            @Html.DisplayFor(ItemModel => item.CenimaName)
+                        </td>
+                        <td class="col-md-4 align-middle">
+                            @Html.DisplayFor(ItemModel => item.Description)
+                        </td>
+                        <td class="col-md-4 align-middle">
+                            <a class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Edit</a>
+                            <a class="btn btn-outline-info"><i class="bi bi-eye"></i>Details</a>
+                            <a class="btn btn-danger"><i class="bi bi-trash"></i>Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>

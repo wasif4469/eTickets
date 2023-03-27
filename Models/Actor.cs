@@ -9,8 +9,14 @@ namespace eTickets.Models
     {
         [Key]
         public int ActorId {get; set;}
-        public string ActorName { get; set;}    
+
+        [Display(Name = "Actor Name")]
+        public string ActorName { get; set;}
+
+        [Display(Name = "Profile Picture")]
         public string ProfilePictureURL { get; set;}
+
+        [Display(Name = "Biography")]
         public string bio { get; set;}
 
         // Relationships

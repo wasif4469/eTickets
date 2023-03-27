@@ -15,7 +15,7 @@ namespace eTickets.Controllers
         public IActionResult Index()
         {
             var AllCenimas = _context.Cenimas.ToList();
-            return View();
+            return View(AllCenimas);
         }
     }
 }

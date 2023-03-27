@@ -10,8 +10,14 @@ namespace eTickets.Models
     {
         [Key]
         public int CenimaID { get; set; }
-        public string CenimaLogo { get; set; }  
+
+        [Display(Name = "Cenima Logo")]
+        public string CenimaLogo { get; set; }
+
+        [Display(Name = "Cenima Name")]
         public string CenimaName { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
 
         //Relationships
