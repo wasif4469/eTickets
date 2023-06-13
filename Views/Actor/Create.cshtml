@@ -1,0 +1,55 @@
+﻿@model Actor
+
+@{
+    ViewData["Title"] = "Create new Actor";
+}
+
+<div class="row text-black">
+    <div class="col-md-8 offset-2">
+        <h3 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 3rem;">Add a new Actor</h3>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-outline text-center">
+                        <img id="ProfilePictureURLPreview" class="rounded-circle" style="height: 120px; width: 150px;object-fit: cover; border: 2px solid #777;" />
+                    </div>
+                    <div class="form-outline mt-4">
+                        <label asp-for="ProfilePictureURL" class="form-label" style="font-family: 'Roboto', sans-serif;">Profile Picture URL</label>
+                        <input asp-for="ProfilePictureURL" class="form-control" placeholder="https://example.com/image.jpg" />
+                        <span asp-validation-for="ProfilePictureURL" class="text-danger"></span>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <label asp-for="ActorName" class="form-label" style="font-family: 'Roboto', sans-serif;">Actor Name</label>
+                        <input asp-for="ActorName" class="form-control" placeholder="John Doe" />
+                        <span asp-validation-for="ActorName" class="text-danger"></span>
+                    </div>
+                    <div class="form-outline mt-4">
+                        <label asp-for="bio" class="form-label" style="font-family: 'Roboto', sans-serif;">Bio</label>
+                        <input asp-for="bio" class="form-control" placeholder="Enter a short bio" />
+                        <span asp-validation-for="bio" class="text-danger"></span>
+                    </div>
+                    <div class="form-outline mt-4" style="margin-top:5px;">
+                        <input type="submit" value="Create" class="btn btn-success float-end" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('ProfilePictureURLPreview');
+            output.src = $("#ProfilePictureURL").val();
+        })
+
+        $("#ProfilePictureURL").on("change", function () {
+            var output = document.getElementById('ProfilePictureURLPreview');
+            output.src = $(this).val();
+        })
+    </script>
+
+}

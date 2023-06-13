@@ -18,6 +18,7 @@ body {
 }
 .form-control {
     display: inline-flex;
-    border:none;
-    width:max-content;
+}
+.form-outline {
+    color: black;
 }

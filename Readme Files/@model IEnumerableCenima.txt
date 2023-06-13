@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Cenima>
+@model IEnumerable<Cenima>
 
 @{
     ViewData["Title"] = "List Of Cenimas";

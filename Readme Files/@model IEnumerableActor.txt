@@ -1,17 +1,17 @@
-﻿@model IEnumerable<Cenima>
+@model IEnumerable<Actor>
 
 @{
-    ViewData["Title"] = "List Of Cenimas";
+    ViewData["Title"] = "List Of Actors";
 }
 
 <div class="row">
     <div class="col-md-8 offset-2">
         <table class="table">
             <thead>
-                <tr align="justify">
-                    <th>@Html.DisplayNameFor(model => model.CenimaLogo)</th>
-                    <th>@Html.DisplayNameFor(model => model.CenimaName)</th>
-                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.ProfilePictureURL)</th>
+                    <th>@Html.DisplayNameFor(model => model.ActorName)</th>
+                    <th>@Html.DisplayNameFor(model => model.bio)</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -20,15 +20,15 @@
                 {
                     <tr>
                         <td class="align-middle">
-                            <img class="rounded-top bg-transparent" src="@item.CenimaLogo" alt="@item.CenimaName" style="max-width: 150px">
+                            <img class="rounded-circle" src="@item.ProfilePictureURL" alt="@item.ActorName" style="max-width: 150px">
                         </td>
-                        <td class="col-md-2 align-middle">
-                            @Html.DisplayFor(ItemModel => item.CenimaName)
+                        <td class="align-middle">
+                            @Html.DisplayFor(ItemModel => item.ActorName)
                         </td>
-                        <td class="col-md-4 align-middle">
-                            @Html.DisplayFor(ItemModel => item.Description)
+                        <td class="align-middle">
+                            @Html.DisplayFor(ItemModel => item.bio)
                         </td>
-                        <td class="col-md-4 align-middle">
+                        <td class="align-middle">
                             <a class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Edit</a>
                             <a class="btn btn-outline-info"><i class="bi bi-eye"></i>Details</a>
                             <a class="btn btn-danger"><i class="bi bi-trash"></i>Delete</a>
