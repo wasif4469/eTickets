@@ -1,0 +1,52 @@
+﻿@model Cenima
+
+@{
+    ViewData["Title"] = "Details of the cinema";
+}
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+        <p>
+            <h1>Details for @Model.CenimaName</h1>
+        </p>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <div class="form-group text-center">
+                    <img class="border-info rounded-circle" style="max-width: 150px" id="CenimaLogoPreview" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="CenimaLogo" class="control-label"></label>
+                    <input asp-for="CenimaLogo" class="form-control" readonly />
+                    <span asp-validation-for="CenimaLogo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CenimaName" class="control-label"></label>
+                    <input asp-for="CenimaName" class="form-control" readonly />
+                    <span asp-validation-for="CenimaName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" readonly />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-outline-success float-right" asp-action="Edit" asp-route-id="@Model.CenimaID">Edit</a>
+                    }
+                    <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById('CenimaLogoPreview');
+            output.src = $("#CenimaLogo").val();
+        })
+    </script>
+}

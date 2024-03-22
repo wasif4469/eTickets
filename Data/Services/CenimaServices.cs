@@ -1,13 +1,14 @@
-﻿using eTickets.Models;
+﻿using eTickets.Data.Base;
+using eTickets.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace eTickets.Data.Services
 {
-    public class CenimaService : ICenimaService
+    public class CenimaServices
     {
         private readonly eTicketsDbContext _context;
 
-        public CenimaService(eTicketsDbContext context)
+        public CenimaServices(eTicketsDbContext context)
         {
             _context= context;
         }
@@ -40,7 +41,7 @@ namespace eTickets.Data.Services
 
         public async Task<Cenima> UpdateAsync(int id, Cenima cenima)
         {
-            var existingCenima = await _context.Cenimas.FindAsync(id);
+            var existingCenima = await _context.Cenimas.FirstOrDefaultAsync(n => n.CenimaID == id);
             if (existingCenima == null)
             {
                 throw new Exception("Cenima not found");

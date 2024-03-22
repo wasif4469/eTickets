@@ -28,16 +28,19 @@ namespace eTickets.Data
             base.OnModelCreating(modelBuilder);
         }
 
-        internal Task GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Actor_Movie> Actors_Movies { get; set; }
         public DbSet<Cenima> Cenimas { get; set; }
         public DbSet<Producer> Producers { get; set; }
+
+
+        //Orders related tables
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
     }
 }

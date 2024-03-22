@@ -1,28 +1,25 @@
-﻿using eTickets.Data;
-using eTickets.Data.Services;
+﻿using eTickets.Data.Services;
 using eTickets.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 
 namespace eTickets.Controllers
 {
     public class CenimaController : Controller
     {
-        private readonly eTicketsDbContext _service;
+        private readonly ICenimaService _service;
 
-        public CenimaController(eTicketsDbContext service)
+        public CenimaController(ICenimaService service)
         {
             _service = service;
         }
 
         public async Task<IActionResult> Index()
         {
-            var AllMovies = await _service.Cenimas.ToListAsync();
-            return View(AllMovies);
+            var AllCenimas = await _service.GetAllAsync();
+            return View(AllCenimas);
         }
 
-        public async Task<IActionResult>Create() 
+        public IActionResult Create()
         {
             return View();
         }
@@ -41,7 +38,7 @@ namespace eTickets.Controllers
 
         public async Task <IActionResult> Details(int id)
         {
-            var CenimaDetails = _service.GetByIdAsync(id);
+            var CenimaDetails = await _service.GetByIdAsync(id);
             if (CenimaDetails == null) return View("NotFound");
             return View(CenimaDetails);
         }
@@ -49,7 +46,7 @@ namespace eTickets.Controllers
         //HTTPGET: EDIT/1
         public async Task<IActionResult>Edit(int id)
         {
-            var CenimaDetails = _service.GetByIdAsync(id);
+            var CenimaDetails = await _service.GetByIdAsync(id);
             if (CenimaDetails == null) return View("NotFound");
             return View(CenimaDetails);
         }
@@ -74,7 +71,7 @@ namespace eTickets.Controllers
         //HTTPGet Delete/1
         public async Task<IActionResult> Delete(int id)
         {
-            var CenimaDetails = _service.GetByIdAsync(id);
+            var CenimaDetails = await _service.GetByIdAsync(id);
             if (CenimaDetails == null) return View("NotFound");
             return View(CenimaDetails);
         }
@@ -85,7 +82,7 @@ namespace eTickets.Controllers
 
             var CenimaDetails = _service.GetByIdAsync(id);
             if (CenimaDetails == null) return View("NotFound");
-            _service.DeleteAsync(id);
+            await _service.DeleteAsync(id);
             return View(CenimaDetails);
             
         }

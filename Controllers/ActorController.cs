@@ -15,8 +15,8 @@ namespace eTickets.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var AllMovies = await _service.GetAllAsync();
-            return View(AllMovies);
+            var AllActors = await _service.GetAllAsync();
+            return View(AllActors);
         }
 
 
@@ -36,7 +36,7 @@ namespace eTickets.Controllers
                 return View(actor);
             }
 
-            _service.AddAsync(actor);
+            await _service.AddAsync(actor);
             return RedirectToAction(nameof(Index));
         }
 
