@@ -9,99 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eTickets
 build_property.RootNamespace = eTickets
-build_property.ProjectDir = C:\Users\mwasif\source\repos\eTickets\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\Wasif\source\repos\eTickets\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mwasif\source\repos\eTickets
+build_property.MSBuildProjectDirectory = C:\Users\Wasif\source\repos\eTickets
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Actor/Create.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Actor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Actor/Delete.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Actor/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Actor/Details.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Actor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Actor/Edit.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Actor/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Actor/Index.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Actor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Cenima/Create.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Cenima/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VuaW1hXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Cenima/Delete.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Cenima/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VuaW1hXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Cenima/Details.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Cenima/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VuaW1hXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Cenima/Edit.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Cenima/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VuaW1hXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Cenima/Index.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Cenima/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VuaW1hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Movie/Index.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Movie/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Producer/Create.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Producer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Producer/Delete.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Producer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Producer/Details.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Producer/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Producer/Edit.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Producer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Producer/Index.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Producer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Shared/Error.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Shared/NotFound.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/_ViewImports.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/_ViewStart.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mwasif/source/repos/eTickets/Views/Shared/_Layout.cshtml]
+[C:/Users/Wasif/source/repos/eTickets/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-oggoba35gg

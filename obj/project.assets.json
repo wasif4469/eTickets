@@ -4043,24 +4043,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mwasif\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Wasif\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mwasif\\source\\repos\\eTickets\\eTickets.csproj",
+      "projectUniqueName": "C:\\Users\\Wasif\\source\\repos\\eTickets\\eTickets.csproj",
       "projectName": "eTickets",
-      "projectPath": "C:\\Users\\mwasif\\source\\repos\\eTickets\\eTickets.csproj",
-      "packagesPath": "C:\\Users\\mwasif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mwasif\\source\\repos\\eTickets\\obj\\",
+      "projectPath": "C:\\Users\\Wasif\\source\\repos\\eTickets\\eTickets.csproj",
+      "packagesPath": "C:\\Users\\Wasif\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wasif\\source\\repos\\eTickets\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mwasif\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Wasif\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4136,7 +4135,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
