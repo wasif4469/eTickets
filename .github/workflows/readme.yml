@@ -24,4 +24,4 @@ jobs:
         run: |
           pip install readmeai
           # Model ka naam specify karna pad sakta hai agar default kaam na kare
-          readmeai --repository ${{ github.repository }} --api openai --model nvidia/nemotron-3-ultra-550b-a55b:free
+          readmeai --repository . --api openai --model nvidia/nemotron-3-ultra-550b-a55b:free
