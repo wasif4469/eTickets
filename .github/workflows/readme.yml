@@ -33,8 +33,8 @@ jobs:
           # Folder structure compile karna
           structure = []
           for root, dirs, files in os.walk("."):
-              # Ignore hidden folders
-              dirs[:] = [d for d in dirs if not d.startswith(".")]
+              # Ignore hidden folders aur build artifacts
+              dirs[:] = [d for d in dirs if not d.startswith(".") and d not in ["bin", "obj", "node_modules"]]
               for f in files:
                   if not f.startswith("."):
                       structure.append(os.path.join(root, f))
@@ -44,10 +44,14 @@ jobs:
           prompt = f"Act as a professional technical writer. Generate a comprehensive, beautiful, and well-formatted README.md markdown file for a repository that contains the following files:\n\n{file_list}\n\nInclude sections: Project Title, Description, Tech Stack (deduced from files like .csproj or package.json), Installation, and Features."
 
           url = "https://openrouter.ai/api/v1/chat/completions"
+          
+          # F-string se backslash hatane ke liye direct variable use kiya hai
+          api_key = os.environ.get("OPENROUTER_API_KEY")
           headers = {
-              "Authorization": f"Bearer {os.getenv(\"OPENROUTER_API_KEY\")}",
+              "Authorization": f"Bearer {api_key}",
               "Content-Type": "application/json"
           }
+          
           data = {
               "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
               "messages": [{"role": "user", "content": prompt}]
