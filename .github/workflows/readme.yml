@@ -17,11 +17,8 @@ jobs:
           python-version: '3.10'
       - name: Install and Run README AI
         env:
-          # OpenRouter API Key
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # OpenRouter ka Base URL set karna zaroori hai
-          OPENAI_BASE_URL: "https://openrouter.ai/api/v1"
         run: |
           pip install readmeai
-          # Model ka naam specify karna pad sakta hai agar default kaam na kare
-          readmeai --repository . --api openai --model nvidia/nemotron-3-ultra-550b-a55b:free
+          # --base-url flag ka istemal
+          readmeai --repository . --api openai --model nvidia/nemotron-3-ultra-550b-a55b:free --base-url https://openrouter.ai/api
