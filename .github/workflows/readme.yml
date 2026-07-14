@@ -18,4 +18,4 @@ jobs:
       - name: Install and Run README AI
         run: |
           pip install readmeai
-          readmeai --repository ${{ github.repository }} --api-key ${{ secrets.OPENAI_API_KEY }}
+          readmeai --repository ${{ github.repository }} --api ${{ secrets.OPENAI_API_KEY }}
