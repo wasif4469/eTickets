@@ -1,8 +1,9 @@
 name: Generate README
 on:
+  workflow_dispatch: # Isse aap GitHub UI se manually run kar sakenge
   push:
     branches:
-      - main
+      - master
 
 jobs:
   readme-ai:
